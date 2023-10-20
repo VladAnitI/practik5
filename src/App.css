@@ -1,38 +1,52 @@
 .App {
-  text-align: center;
+	text-align: center;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+	background-color: rgb(255, 115, 0);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Main {
+	background-color: rgba(34, 22, 17, 0.199);
+	margin-top: 100px;
+	padding: 10px;
+	border-radius: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+input {
+	display: block;
+	margin: 10px auto;
+	background-color: rgba(240, 248, 255, 0);
+	color: white;
+	width: 300px;
+	height: 30px;
+	font-size: 20px;
+	border: 1.5px solid white;
+	border-radius: 10px;
+	padding: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+.notValid{
+	color: rgb(255, 0, 0);
+	border: 1.5px solid rgb(255, 0, 0);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button {
+	background-color: white;
+	border: 0;
+	border-radius: 10px;
+	color: rgb(255, 115, 0);
+  height: 30px;
+	font-size: 20px;
+  cursor: pointer;
+}
+
+input::placeholder {
+	color: white;
+}
+
+.Form {
+	margin: 0 auto;
 }
